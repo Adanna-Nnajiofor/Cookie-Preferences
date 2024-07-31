@@ -33,8 +33,8 @@ const cookieData = [
 const CookiePreferences = () => {
   const handleToggle = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
     const target = e.currentTarget as HTMLButtonElement;
-    const isChecked = !target.classList.contains("bg-[#B61DC0]");
-    target.className = isChecked ? "bg-[#B61DC0]" : "bg-[#E2E8F0]";
+    const isChecked = !target.classList.contains("bg-[#F97316]");
+    target.className = isChecked ? "bg-[#F97316]" : "bg-[#E2E8F0]";
   }, []);
 
   return (
@@ -70,13 +70,12 @@ const CookiePreferences = () => {
               <Switch
                 defaultChecked={false}
                 onClick={handleToggle}
-                className="bg-[#E2E8F0] z-0"
+                className="bg-[#E2E8F0]"
                 style={{
                   width: "40px",
                   height: "20px",
                   borderRadius: 50,
                   zIndex: 0,
-                  position: "relative",
                 }}
               />
             </div>
