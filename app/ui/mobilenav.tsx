@@ -9,7 +9,7 @@ type ModalProps = {
 export default function MobileNav({ open, onClose }: ModalProps) {
   return (
     <div
-      className={`fixed inset-0 flex justify-center items-center text-[#0E0E10]
+      className={`fixed inset-0 flex justify-center items-center text-[#0E0E10] z-20
     transition-colors ${open ? "visible bg-black/20" : "invisible"}
     `}
       onClick={onClose}

@@ -63,15 +63,21 @@ const CookiePreferences = () => {
                 className=" object-cover"
               />
             </div>
-            <div className="cookie-card-1 flex justify-between w-full mb-4">
+            <div className="cookie-card-1 flex justify-between w-full mb-4 ">
               <h2 className="font-manrope text-xl font-semibold text-left">
                 {cookie.title}
               </h2>
               <Switch
                 defaultChecked={false}
-                onClick={handleToggle} // Use onClick for button-like behavior
-                className="bg-[#E2E8F0]" // Initial state
-                style={{ width: "40px", height: "20px", borderRadius: 50 }}
+                onClick={handleToggle}
+                className="bg-[#E2E8F0] z-0"
+                style={{
+                  width: "40px",
+                  height: "20px",
+                  borderRadius: 50,
+                  zIndex: 0,
+                  position: "relative",
+                }}
               />
             </div>
             <div className="cookie-card-text">
